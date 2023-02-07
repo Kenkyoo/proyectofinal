@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Curriculum Vitae - Proyecto Integrador</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href="icons/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6e71d51740.js" crossorigin="anonymous"></script>
+    
+    <script src="js/script.js" async></script>
+    <script src="js/script2.js" async></script>
+    <script src="js/script3.js" async></script>
+    
+</head>
+
+<body>
+    
+    <!--Background color change-->
+    
+    <div id="button-group">
+        <button class="btn-1" value="DarkSlateBlue"></button>
+        <button class="btn-2" value="DarkSlateGray"></button>
+        <button class="btn-3" value="Aliceblue"></button>
+        <button class="btn-4" value="MidnightBlue"></button>
+    </div>
+
+    <div class="container">    
+    <!--Encabezado-->
+        <header>
+            <div class="header">
+                <img src="images/img.jpg" alt="random photo female user">
+                <h1>Justine Carr</h1>
+                <p><strong>Web Developer</strong></p>
+            </div>
+        </header>  
+    <!--Barra de navegación con íconos-->
+        <nav>
+            <div class="navbar">
+                <a href="#" target="_blank" title="Slack"><i class="fa-brands fa-slack"></i></a>
+                <a href="mailto:justinecarr@example.com" target="_blank" title="Mail"><i class="fa-solid fa-envelope"></i></a> <!--Al hacer click se abrirá una ventana en el servidor de correo predeterminado-->
+                <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank" title="Wordpress"><i class="fa-brands fa-wordpress"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    <!--El main del curriculum se divide en dos columnas dividas entre formación y habilidades-->
+        <main>
+            <div class="row">
+    <!--Columna izquierda se divide en dos secciones que contiene experiencia laboral y educación-->      
+                <div class="col-1">
+                    <section class="experience">
+                        <article class="education">
+                            <h2>Educación</h2>                            
+                            <ul>
+                                <li>
+                                    <span>2010 - 2013</span>
+                                    <h3>University Valley Sierra</h3>
+                                    <p>Web Research Criteria</p>
+                                </li>
+                                <li>
+                                    <span>2013 - 2015</span>
+                                    <h3>Oak Institute Sierra</h3>
+                                    <p>Developer and Technological Basis</p>
+                                </li>
+                                <li>
+                                    <span>2015 - 2017</span>
+                                    <h3>Sierra Academy</h3>
+                                    <p>System and Dev Mechanisms</p>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="jobs">
+                            <h2>Experiencia Laboral</h2>
+                            <ul>
+                                <li>
+                                    <span>2017 - 2019</span>
+                                    <h3>Dev Manager Recruitment</h3>
+                                    <p>Sierra Corporation</p>
+                                </li>
+                                <li>
+                                    <span>2019 - 2020</span>
+                                    <h3>Dev System Controlling</h3>
+                                    <p><abbr title="Business Industry Organization">B.I.O.</abbr> Industries</p>
+                                </li>
+                                <li>
+                                    <span>2020 - 2022</span>
+                                    <h3>Web Developer</h3>
+                                    <p>Developer Company</p>
+                                </li>
+                            </ul>
+                        </article>     
+                    </section>
+                </div>
+
+    <!--Columna derecha se divide en tres secciones que contiene objetivos habilidades e información personal-->
+
+                <div class="col-2">
+                    <section class="skills-data">
+                        <article class="objectives">                           
+                            <h2>Objetivos</h2>
+                            <p>Desarrollador de software con fuertes conocimientos en lenguajes de programación y ciencias de la computación que busca obtener un puesto en una startup que me ayude a aplicar mis habilidades y competencias técnicas en pro del éxito de la empresa.</p>
+                        </article>
+
+                        <article class="skills">       
+                            <h2>Habilidades</h2>
+
+                            <h3>HTML</h3>
+                            <div class="bar-container">
+                                <div class="skills-bar html">80%</div>
+                            </div>
+
+                            <h3>CSS</h3>
+                            <div class="bar-container">
+                                <div class="skills-bar css">90%</div>
+                            </div>
+
+                            <h3>JavaScript</h3>
+                            <div class="bar-container">
+                                <div class="skills-bar-js" id="dynamic-bar"></div>
+                            </div>                            
+                            <br>
+                            <button id="btn-js" onclick="move()">Click me</button>
+                            
+                            <h3>Bootstrap</h3>
+                            <div class="bar-container">
+                                <div class="skills-bar bs">40%</div>
+                            </div>
+                        </article>
+                        <hr>
+
+                        <article class="about-me"> 
+                            <button class="hover">Sobre mí</button>
+                            <div class="panel">
+                                <p>Soy una persona dedicada, organizada y metódica. Tengo buenas habilidades interpersonales, soy una excelente trabajadora de equipo y tengo muchas ganas de aprender y desarrollar nuevas habilidades. Soy confiable y, a menudo, busco nuevas responsabilidades dentro de una amplia gama de áreas de empleo. Tengo un enfoque activo y dinámico para trabajar y hacer las cosas. Soy decidida y resolutiva. Identifico y desarrollo oportunidades.</p>
+                            </div>
+                        </article>                        
+                    </section>
+                </div>
+            </div>    
+        </main>
+    <!--El Footer se divide en 3 columnas que contienen información de contacto-->
+        <footer>
+            <div class="cont">
+                
+                <div class="col">
+                    <span><i class="fa-solid fa-phone"></i> (443) 898-4823</span>
+                    <br>
+                    <span><i class="fa-solid fa-house"></i> 3622 Taylor St</span>
+                </div>
+                
+                <div class="col">
+                    <p>My Website</p>
+                    <a href="#" target="_blank">www.justinecarr.com</a>
+                </div>
+                
+                <div class="col">
+                    <p>Learn more</p>
+                    <a href="https://randomuser.me/" target="_blank">About me</a>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</body>
+</html>
